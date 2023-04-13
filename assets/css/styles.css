@@ -1,0 +1,258 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Wet+Paint&display=swap');
+
+:root {
+  --branco: #fff;
+  --preto: #252525;
+  --roxo-claro: #fae1ff;
+  --roxo-medio: #d4b1e9;
+  --roxo-escuro: #b042db;
+
+  --fonte-primaria: "Roboto Mono", monospace;
+  --fonte-secundaria: "Rubik Wet Paint", cursive;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+  width: 0.625rem;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--branco);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--rosa-medio);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--preto);
+}
+
+body {
+  width: auto;
+  height: auto;
+}
+
+body::after {
+  content: "";
+  background-image: url("../pictures/pattern.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+  opacity: 0.3;
+}
+
+.navbar__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  gap: 0.625rem;
+  top: 0;
+  height: 3.75rem;
+  width: 100%;
+  background-color: var(--roxo-escuro);
+  border-style: inset;
+  border-color: var(--roxo-medio);
+  border-width: 0.3rem;
+  }
+
+.navbar__titulo {
+  font-family: var(--fonte-secundaria);
+  font-size: 1.875rem;
+  color: var(--preto);
+}
+
+.navbar__imagem {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+.input__container {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5rem;
+  gap: 1.25rem;
+  font-family: var(--fonte-primaria);
+  }
+
+.input__titulo {
+  font-size: 1rem;
+  text-align: center;
+  color: var(--preto);
+}
+
+#input__entrada,
+#input__saida {
+  opacity: 0.8;
+  width: 18.75rem;
+  height: 9.375rem;
+  padding: 0.625rem;
+  text-align: center;
+  font-size: 1rem;
+  color: var(--preto);
+  overflow: scroll;
+  overflow-y: auto;
+  overflow-x: auto;
+  resize: none;
+  border: 0.5rem inset var(--roxo-escuro);
+  }
+
+::placeholder {
+  color: var(--preto);
+}
+
+textarea:focus {
+  outline: none;
+}
+
+textarea::-webkit-scrollbar {
+  width: 0.313rem;
+}
+
+textarea::-webkit-scrollbar-thumb {
+  background-color: var(--rosa-escuro);
+  outline: 0.063rem solid var(--rosa-medio);
+}
+
+.botoes__principais {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+  gap: 0.625rem;
+  margin-top: 1.25rem;
+}
+
+.botoes__secundarios {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+  white-space: wrap;
+  gap: 0.625rem;
+  margin-top: 0.625rem;
+  width: 100%;
+}
+
+button {
+  width: 10rem;
+  height: 2.5rem;
+  background-color: var(--roxo-escuro);
+  flex-flow: row wrap;
+  border: none;
+  border-radius: 0.625rem;
+  white-space: nowrap;
+  font-family: var(--fonte-primaria);
+  font-size: 0.875rem;
+  font-weight: 400;
+  color: #eeeeee;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: var(--roxo-medio);
+}
+
+.aviso__container {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1.25rem;
+}
+
+#aviso__texto {
+  font-family: var(--fonte-primaria);
+  font-size: 0.875rem;
+  text-align: center;
+}
+
+#aviso__texto img {
+  vertical-align: middle;
+  width: 1.25rem;
+  word-wrap: break-all;
+}
+
+#aviso__imagem img {
+  width: 1.875rem;
+  height: 1.875rem;
+}
+
+.footer__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  gap: 0.625rem;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 3.75rem;
+  width: 100%;
+  background-color: var(--roxo-escuro);
+  border-style: inset;
+  border-color: var(--roxo-medio);
+  border-width: 0.3rem;
+}
+
+.footer__container img {
+  width: 1.875rem;
+ }
+
+#bruxa {
+  display: flex;
+  position: absolute;
+  top: 3.25rem;
+  left: -3.8125rem;
+  z-index: -1;
+   }
+
+@media (max-width: 1280px) {
+  #bruxa {
+    display:flex;
+  }
+}
+
+@media (min-width: 720px) {
+  .input__titulo {
+    font-size: 1.25rem;
+  }
+
+  #input__entrada,
+  #input__saida {
+    width: 37.5rem;
+    height: 12.5rem;
+    font-size: 1.125rem;
+    
+    
+  }
+
+  button {
+    width: 12.5rem;
+    height: 3.125rem;
+    font-size: 1.125rem;
+  }
+
+  #aviso__texto {
+    font-size: 1rem;
+  }
+
+  .footer__container {
+    gap: 1.875rem;
+  }
+}

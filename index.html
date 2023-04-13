@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <link rel="icon" type="image/x-icon" href="assets/pictures/chapeu.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.css"
+    />
+    <title>Witch Code - Alura Challenge</title>
+  </head>
+
+  <body>
+    <header>
+      <nav class="navbar__container">
+        <h1 class="navbar__titulo">Witch Code</h1>
+        <img
+          class="navbar__imagem"
+          src="assets/pictures/chapeu.png"
+          alt="Chapeu"
+        />
+      </nav>
+    </header>
+
+    <section class="input__container">
+      <h2 class="input__titulo">O que você gostaria de codificar?</h2>
+      <textarea
+        id="input__entrada"
+        placeholder="Digite sua mensagem aqui."
+      ></textarea>
+      <textarea
+        id="input__saida"
+        placeholder="Ela sairá aqui!"
+        readonly
+      ></textarea>
+    </section>
+
+    <section class="botoes__principais">
+      <button id="botao__criptografar" onclick="criptografaTexto()">
+        Criptografar
+      </button>
+      <button id="botao__descriptografar" onclick="descriptografaTexto()">
+        Descriptografar
+      </button>
+    </section>
+
+    <section class="botoes__secundarios">
+      <button id="botao__copiar" onclick="copiaTexto()">Copiar</button>
+      <button id="botao__apagar" onclick="limpaCampos()">Apagar</button>
+    </section>
+
+    <section class="aviso__container">
+      <p id="aviso__texto">
+        <img
+          id="aviso__imagem"
+          src="assets/pictures/exclamation.png"
+          alt="Ponto de exclamação"
+        />
+        Apenas letras minúsculas, sem acentos e sem caracteres especiais.
+      </p>
+    </section>
+
+    <aside class="aside__container">
+      <img id="bruxa" src="assets/pictures/bruxa.png" alt="bruxa" />
+    </aside>
+
+    <footer class="footer__container">
+      <p class="footer__creditos">Desenvolvido por Juliana Fontes.</p>
+      <a href="https://github.com/Juh-jfo" target="_blank"
+        ><i class="fa-brands fa-github fa-2xl" style="color: #511f48"></i
+      ></a>
+
+      <a href="https://www.linkedin.com/in/jfooliveira/" target="_blank"
+        ><i class="fa-brands fa-linkedin fa-2xl" style="color: #511f48"></i
+      ></a>
+    </footer>
+
+    <!-- SCRIPTS -->
+    <script src="assets/scripts/criptografia.js"></script>
+    <script src="assets/scripts/descriptografia.js"></script>
+    <script src="assets/scripts/copiaTexto.js"></script>
+    <script src="assets/scripts/limpaCampos.js"></script>
+  </body>
+</html>
