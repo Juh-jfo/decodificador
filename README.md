@@ -46,13 +46,8 @@ O projeto inicial possuía o design proposto no [Figma](https://www.figma.com/fi
 </p>
 
 ## Funcionalidades
-
-#### Criptografia 🔒
-
-#### Descriptografia 🔓
-
-#### Copia texto 📋
-
-#### Apaga campos preenchidos 🗑
-
-#### Extra: avisa quando o usuário digita palavras com letras maiúsculas ou acentuação ⚠️
+- [x] Criptografia 🔒
+- [x] Descriptografia 🔓
+- [x] Copia texto 📋
+- [x] Apaga campos preenchidos 🗑
+- [x] Extra: avisa quando o usuário digita palavras com letras maiúsculas ou acentuação ⚠️
