@@ -37,12 +37,12 @@ O projeto inicial possuía o design proposto no [Figma](https://www.figma.com/fi
 
 ### Versão Desktop 💻
 
-![Imagem do Projeto Desktop](https://uploaddeimagens.com.br/imagens/xGgwkEI)
+![Imagem do Projeto Desktop](https://i.postimg.cc/hvr7JRtv/Foto-Desktop.png)
 
 ### Versão Mobile 📱<p align="center">
 
 <p align="center">
-  <img src="https://uploaddeimagens.com.br/imagens/VxM3Mpo" alt="Imagem do design em celular" width=300 />
+  <img src="https://i.postimg.cc/Y0kWqCkT/Foto-Mobile.png" alt="Imagem do design em celular" width=300 />
 </p>
 
 ## Funcionalidades
