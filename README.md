@@ -7,7 +7,7 @@
 ## Início
 
 O projeto faz parte da primeira fase da seleção ONE (Oracle Next Education) em parceria com a Alura e possui como objetivo a **criptografia de textos**.
-Para melhor visualização, o projeto encontra-se em deploy [**aqui**](https://github.com/Juh-jfo/decodificador).
+Para melhor visualização, o projeto encontra-se em deploy [**aqui**](https://juh-jfo.github.io/decodificador/).
 
 ## Sobre o desafio
 
